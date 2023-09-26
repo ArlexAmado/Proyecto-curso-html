@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Sissy and Lu</title>
+  <link rel="stylesheet" type="text/css" href="estilos/estilosGaleria.css" />  <!-- liga -->
+  <script src="https://kit.fontawesome.com/ccdf7bfff8.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+
+            background-image: url("/assets/img/gatitos.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+          margin-top: -150px;
+            list-style-type: none;
+            /* margin: 0; */
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+        
+      /*   .galeria {
+            display: flex;
+            justify-content: center;
+            background-repeat: no-repeat;
+        } */
+        
+        h1 {
+            /* background-color: black; */
+            padding: 30px;
+            margin-top: 50px;
+            /* color: #ec9d08; */
+        }
+
+      /*   h2 {
+            text-align: center;
+            color: #FFF;
+        
+        } */
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            text-align: center;
+            color: #FFF;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+</style>
+
+
+<body>
+  <h1>Nuestros Recuerdos </h1>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a>
+        <li><a href="ellas.html">Ellas</a>
+        <li><a class="active" href="galeria.html">Galeria</a>
+      </ul>
+    </nav>
+  </header>
+  <!-- <h2>Nuestros Recuerdos</h2> -->
+
+  <span class="linea"></span>
+  <section class="galeria">
+    <a href="#image1"><img src="/assets/img/uno.jpg" alt=""></a>
+    <a href="#image2"><img src="/assets/img/dos.jpg" alt=""></a>
+    <a href="#image3"><img src="/assets/img/tres.jpg" alt=""></a>
+    <a href="#image4"><img src="/assets/img/cuatro.jpg" alt=""></a>
+    <a href="#image5"><img src="/assets/img/cinco.jpg" alt=""></a>
+    <a href="#image6"><img src="/assets/img/seis.jpg" alt=""></a>
+  </section>
+  
+  
+  <article class="light-box" id="image1">
+    <a href="#image6" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+     <img src="/assets/img/uno.jpg" alt="">
+    <a href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+  </article>
+
+  <article class="light-box" id="image2">
+    <a href="#image1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+     <img src="/assets/img/dos.jpg" alt="">
+    <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+  </article>
+
+  <article class="light-box" id="image3">
+    <a href="#image2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+     <img src="/assets/img/tres.jpg" alt="">
+    <a href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+  </article>
+
+  <article class="light-box" id="image4">
+    <a href="#image3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+     <img src="/assets/img/cuatro.jpg" alt="">
+    <a href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+  </article>
+
+  <article class="light-box" id="image5">
+    <a href="#image4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+     <img src="/assets/img/cinco.jpg" alt="">
+    <a href="#image6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+  </article>
+
+  <article class="light-box" id="image6">
+    <a href="#image5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+     <img src="/assets/img/seis.jpg" alt="">
+    <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#" class="close">X</a>
+  </article>
+  
+  <footer>
+      <p> Derechos Reservados &copy; 2023</p>
+    </footer>
+
+</body>
+
+</html>
